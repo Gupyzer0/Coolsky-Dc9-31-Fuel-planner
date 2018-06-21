@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Planeador de Combustible DC9-31 @PW JT8D-7</string>
+   <string>Coolsky DC9-31 Fuel Planner - @PW JT8D-7</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
@@ -161,7 +161,7 @@
     <item row="3" column="0">
      <widget class="QLabel" name="label_4">
       <property name="text">
-       <string>Viento</string>
+       <string>Wind</string>
       </property>
      </widget>
     </item>
@@ -437,14 +437,14 @@
     <item row="2" column="0">
      <widget class="QLabel" name="label_3">
       <property name="text">
-       <string>Altura</string>
+       <string>Altitude</string>
       </property>
      </widget>
     </item>
     <item row="10" column="0">
      <widget class="QLabel" name="label_14">
       <property name="text">
-       <string>Reserva Final</string>
+       <string>Final reserve</string>
       </property>
      </widget>
     </item>
@@ -468,21 +468,21 @@
     <item row="0" column="0">
      <widget class="QLabel" name="label">
       <property name="text">
-       <string>Distancia</string>
+       <string>Distance</string>
       </property>
      </widget>
     </item>
     <item row="8" column="0">
      <widget class="QLabel" name="label_11">
       <property name="text">
-       <string>Combustible para la ruta</string>
+       <string>Route fuel</string>
       </property>
      </widget>
     </item>
     <item row="13" column="0">
      <widget class="QLabel" name="label_10">
       <property name="text">
-       <string>Aproximaciones instrumentales</string>
+       <string>Instrumental Approaches</string>
       </property>
      </widget>
     </item>
@@ -499,7 +499,7 @@
     <item row="1" column="0">
      <widget class="QLabel" name="label_2">
       <property name="text">
-       <string>Distancia al alterno</string>
+       <string>Distance to alternate</string>
       </property>
      </widget>
     </item>
@@ -595,7 +595,7 @@
     <item row="12" column="0">
      <widget class="QLabel" name="label_13">
       <property name="text">
-       <string>Taxeo</string>
+       <string>Taxi</string>
       </property>
      </widget>
     </item>
@@ -622,7 +622,7 @@
     <item row="9" column="0">
      <widget class="QLabel" name="label_12">
       <property name="text">
-       <string>Combustible para el alterno</string>
+       <string>Fuel to alterante</string>
       </property>
      </widget>
     </item>
@@ -635,7 +635,7 @@
        </size>
       </property>
       <property name="text">
-       <string>Calcular</string>
+       <string>Calculate</string>
       </property>
      </widget>
     </item>
@@ -665,7 +665,7 @@
        </size>
       </property>
       <property name="text">
-       <string>combustible (Lbs)</string>
+       <string>Fuel (Lbs)</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -691,7 +691,7 @@
        </size>
       </property>
       <property name="text">
-       <string>Tiempo</string>
+       <string>Time</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -717,7 +717,7 @@
        </sizepolicy>
       </property>
       <property name="title">
-       <string>Peso</string>
+       <string>Weigth</string>
       </property>
       <property name="flat">
        <bool>false</bool>
@@ -794,7 +794,7 @@
     <item row="11" column="0" colspan="2">
      <widget class="QLabel" name="label_15">
       <property name="text">
-       <string>Extra (discrecional, 2500lbs x Hr)</string>
+       <string>Extra (2500lbs x hour)</string>
       </property>
      </widget>
     </item>

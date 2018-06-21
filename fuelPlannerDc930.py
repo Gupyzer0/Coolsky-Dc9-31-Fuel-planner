@@ -68,7 +68,7 @@ class FuelPlanner(QtWidgets.QMainWindow):
 		
 		if not plan_ruta:
 			self.msgBox.setWindowTitle('Error')
-			self.msgBox.setText('Error: No es posible realizar esta ruta, se encuentra fuera de las gráficas')
+			self.msgBox.setText('Error: The aircraft it\'s unable to perform this route.')
 			self.msgBox.setIcon(QtWidgets.QMessageBox.Critical)
 			self.msgBox.setStandardButtons(QtWidgets.QMessageBox.Ok)
 			self.msgBox.exec_()
@@ -99,8 +99,8 @@ class FuelPlanner(QtWidgets.QMainWindow):
 
 		if combustible_total > self.combustible_maximo:
 			exceso = int(combustible_total - self.combustible_maximo)
-			self.msgBox.setWindowTitle('Exceso de combustible')
-			self.msgBox.setText("Hay un exceso de " + str(exceso) + " libras de combustible.")
+			self.msgBox.setWindowTitle('Too much fuel')
+			self.msgBox.setText("There's an excess of " + str(exceso) + " pounds of fuel.")
 			self.msgBox.setIcon(QtWidgets.QMessageBox.Critical)
 			self.msgBox.setStandardButtons(QtWidgets.QMessageBox.Ok)
 			self.msgBox.exec_()
@@ -109,8 +109,8 @@ class FuelPlanner(QtWidgets.QMainWindow):
 			return
 
 		if combustible_total < self.combustible_minimo_vuelo:
-			self.msgBox.setWindowTitle('Poco combustible')
-			self.msgBox.setText("La aeronave no tiene el mínimo requerido por la FAA de " + str(self.combustible_minimo_vuelo) +  " para volar. Combustible: " + str(combustible_total))
+			self.msgBox.setWindowTitle('Low fuel')
+			self.msgBox.setText("The FAA requires a minimum of " + str(self.combustible_minimo_vuelo) +  " for dispatch. Current fuel: " + str(combustible_total))
 			self.msgBox.setIcon(QtWidgets.QMessageBox.Critical)
 			self.msgBox.setStandardButtons(QtWidgets.QMessageBox.Ok)
 			self.msgBox.exec_()
