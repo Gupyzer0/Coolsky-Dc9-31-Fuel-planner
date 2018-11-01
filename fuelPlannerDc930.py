@@ -147,6 +147,7 @@ class FuelPlanner(QtWidgets.QMainWindow):
 
 		paletaLcdZfw = self.ui.lcdNumber_ZFW.palette()
 		paletaLcdTow = self.ui.lcdNumber_TOW.palette()
+		paletaLcdLw = self.ui.lcdNumber_LW.palette()
 
 		if self.TOW > self.MTOW:
 			paletaLcdTow.setColor(paletaLcdTow.WindowText, QtGui.QColor(255,45,30))
@@ -154,15 +155,20 @@ class FuelPlanner(QtWidgets.QMainWindow):
 		else:
 			paletaLcdTow.setColor(paletaLcdTow.WindowText, QtGui.QColor(24,28,21))
 
-		self.ui.lcdNumber_TOW.setPalette(paletaLcdTow)
-			
 		if self.ZFW > self.MZFW:
 			paletaLcdZfw.setColor(paletaLcdZfw.WindowText, QtGui.QColor(255,45,30))
 					
 		else:
 			paletaLcdZfw.setColor(paletaLcdZfw.WindowText, QtGui.QColor(24,28,21))
 
+		if LW > self.MLW:
+			paletaLcdLw.setColor(paletaLcdLw.WindowText, QtGui.QColor(255,45,30))
+		else:
+			paletaLcdLw.setColor(paletaLcdLw.WindowText, QtGui.QColor(24,28,21))			
+
+		self.ui.lcdNumber_TOW.setPalette(paletaLcdTow)
 		self.ui.lcdNumber_ZFW.setPalette(paletaLcdZfw)
+		self.ui.lcdNumber_LW.setPalette(paletaLcdLw)
 		
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
