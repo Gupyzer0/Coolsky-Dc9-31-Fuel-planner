@@ -40,7 +40,7 @@ class FuelPlanner(QtWidgets.QMainWindow):
 
 	def calcular_combustible_apps(self):
 		combustible_app_instrumental = int(self.ui.comboBox_num_app.currentText()) * 650
-		self.ui.spinBox_num_app.setValue(combustible_app_instrumental)
+		self.ui.lineEdit_num_app.setText(str(combustible_app_instrumental))
 
 	def calcular_tiempo_extra(self):
 		combustible_extra = self.ui.spinBox_extra.value()
