@@ -68,7 +68,7 @@ class FuelPlanner(QtWidgets.QMainWindow):
 		
 		if not plan_ruta:
 			self.msgBox.setWindowTitle('Error')
-			self.msgBox.setText('Error: The aircraft it\'s unable to perform this route.')
+			self.msgBox.setText('Error: The current parameters are out of a JT8D-7 equiped Dc-9-31 flight envelope.')
 			self.msgBox.setIcon(QtWidgets.QMessageBox.Critical)
 			self.msgBox.setStandardButtons(QtWidgets.QMessageBox.Ok)
 			self.msgBox.exec_()
@@ -171,7 +171,10 @@ class FuelPlanner(QtWidgets.QMainWindow):
 		self.ui.lcdNumber_LW.setPalette(paletaLcdLw)
 		
 if __name__ == "__main__":
-    app = QtWidgets.QApplication(sys.argv)
-    aplicacion = FuelPlanner()
-    aplicacion.show()
-    sys.exit(app.exec_())
+	app = QtWidgets.QApplication(sys.argv)
+	aplicacion = FuelPlanner()
+	x = app.desktop().screenGeometry().center().x()
+	y = app.desktop().screenGeometry().center().y()
+	aplicacion.move(x - aplicacion.geometry().width()/2, y - aplicacion.geometry().height()/2)
+	aplicacion.show()
+	sys.exit(app.exec_())
