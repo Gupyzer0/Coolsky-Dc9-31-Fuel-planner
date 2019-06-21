@@ -1,8 +1,6 @@
-# Fuelplanner for the Dc9-31 by coolsky add-on for FsX and P3D.
+# Fuelplanner for the Dc9-31 with JT8D-7 engines add-on by coolsky for FsX and P3D.
 ---
 Just a simple flightplanner made with Python3 and PyQt5 using the charts included in the AOM.
-
-Remember what the manual says ... :airplane:
 
 ### CLIMB:
 * 250 KIAS to 10,000’
